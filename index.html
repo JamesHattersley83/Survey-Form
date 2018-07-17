@@ -10,39 +10,80 @@
 <body>
   <div id="container">
     <h1 id="title">Survey Form</h1>
-    <p id="description">Let us know how we can improve Freecodecamp</p>
       <form action="" id="survey-form" method="post"></form>
-        <label for="name" id="name-label">*Name:</label>
-        <input id="name" type="text" placeholder="Enter your name">
-        <label for="email" id="email-label">*Email:</label>
-        <input id="email" type="email" placeholder="Enter your email">
-        <label for="number" id="number-label">*Age:</label>
-        <input id="number" type="number" placeholder="Age">
+        <fieldset class="user-info">
+          <p id="description">Let us know how we can improve freeCodeCamp</p>
+          <label for="name" id="name-label">*Name:
+            <input id="name" type="text" name="name" placeholder="Enter your name">
+          </label>
+        </fielset>
+        <fieldset>
+          <label for="email" id="email-label">*Email:
+            <input id="email" type="email" name="email" required placeholder="Enter your email">
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="number" id="number-label">*Age:
+            <input id="number" type="number" name="age" placeholder="Age">
+          </label>
+        </fieldset>
 
-        <label for="dropdown">Which option best describes your current role?</label>
-        <select id="dropdown">
-          <option value="">Select an option</option>
-          <option value="Student">Student</option>
-          <option value="Full Time Job">Full Time Job</option>
-          <option value="Full Time Learner">Full Time Learner</option>
-          <option value="Prefer not to say">Prefer not to say</option>
-          <option value="Other">Other</option>
-        </select>
+        <fieldset>
+          <label for="dropdown">Which option best describes your current role?
+            <select id="dropdown">
+              <option value="">Select an option</option>
+              <option value="Student">Student</option>
+              <option value="Full Time Job">Full Time Job</option>
+              <option value="Full Time Learner">Full Time Learner</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="">*How likely is it that you would recommend freeCodeCamp to a friend?
+            <input type="checkbox" name="" value="Definely"><label for="">Definely</label>
+            <input type="checkbox" name="" value="Maybe"><label for="">Maybe</label>
+            <input type="checkbox" name="" value="Not sure"><label for="">Not sure</label>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="List">What do you like most in FCC:
+            <select id="List">
+              <option value="">Select an option</option>
+              <option value="Challenges">Challenges</option>
+              <option value="Projects">Challenges</option>
+              <option value="Community">Challenges</option>
+              <option value="Open Source">Challenges</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="">Things that should be improved in the future (Check all that apply):
+            <input type="checkbox" name="" value=""><label for="">Front-end Projects</label>
+            <input type="checkbox" name="" value=""><label for="">Back-end Projects</label>
+            <input type="checkbox" name="" value=""><label for="">Data Visualization</label>
+            <input type="checkbox" name="" value=""><label for="">Challenges</label>
+            <input type="checkbox" name="" value=""><label for="">Open Source Community</label>
+            <input type="checkbox" name="" value=""><label for="">Gitter Help Rooms</label>
+            <input type="checkbox" name="" value=""><label for="">Videos</label>
+            <input type="checkbox" name="" value=""><label for="">City Meetups</label>
+            <input type="checkbox" name="" value=""><label for="">Wiki</label>
+            <input type="checkbox" name="" value=""><label for="">Forum</label>
+            <input type="checkbox" name="" value=""><label for="">Additional Courses</label>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="">
+            Any Comments or Suggestions?
+            <textarea name="comments" placeholder="Enter your comment here..."></textarea>
+          </label>
+        </fieldset>
 
-        <label for="">*How likely is it that you would recommend freeCodeCamp to a friend?</label>
-          <input type="checkbox" name="" value=""><label for="">Definely</label>
-          <input type="checkbox" name="" value=""><label for="">Maybe</label>
-          <input type="checkbox" name="" value=""><label for="">Not sure</label>
+          <input type="submit" name="submit" value="Submit">
 
-        <label for="List">What do you like most in FCC:</label>
-        <select id="List">
-          <option value="">Select an option</option>
-          <option value="Challenges">Challenges</option>
-        </select>
-
-
-
+        </fieldset>
+      </form>
   </div>
-
 </body>
 </html>
