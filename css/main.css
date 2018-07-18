@@ -1,24 +1,48 @@
-*,
-*:before,
-*:after {
+* {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #A9D7D1;
+  background: #ffcdd2;
+  color: #000;
+  line-height: 2;
+  font-family: sans-serif;
+  padding: 1em;
+
 }
 
-h1 {
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7)
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.title-header {
+  background: #ef9a9a;
+}
+
+#title {
   text-align: center;
 }
 
-p {
+#description {
   text-align: center;
 }
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 10px;
-  background-color: white;
+#survey-form {
+  background: #fff;
+}
+
+.flex-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
