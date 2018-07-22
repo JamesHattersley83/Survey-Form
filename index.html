@@ -37,7 +37,7 @@
           <li>
             <label>Which option best describes your current role?</label>
             <select id="dropdown">
-              <option disabled value="job">Select an option</option>
+              <option disabled value="job" disabled>Select an option</option>
               <option value="Student">Student</option>
               <option value="Full Time Job">Full Time Job</option>
               <option value="Full Time Learner">Full Time Learner</option>
@@ -49,20 +49,17 @@
             <p>How likely is it that you would recommend freeCodeCamp to a friend?</p>
             <ul class="form-inner">
               <li>
-                <input type="radio" name="recommend" value="Definely">
-                <label>Definely</label>
+                <input type="radio" name="recommend" value="Definely">Definetly
               </li>
               <li>
-                <input type="radio" name="recommend" value="Maybe" name>
-                <label>Maybe</label>
+                <input type="radio" name="recommend" value="Maybe" name>Maybe
               </li>
               <li>
-                <input type="radio" name="recommend"value="Not sure">
-                <label>Not sure</label>
+                <input type="radio" name="recommend"value="Not sure">Not sure
               </li>
             </ul>
           <li>
-            <label for="List">What do you like most in FCC:
+            <label for="List">What do you like most in FCC:</label>
               <select id="List">
                 <option value="">Select an option</option>
                 <option value="Challenges">Challenges</option>
@@ -70,9 +67,9 @@
                 <option value="Community">Community</option>
                 <option value="Open Source">Open Source</option>
               </select>
-            </label>
           </li>
 
+        <li>
         <p>Things that should be improved in the future (Check all that apply):</p>
         <ul class="form-inner">
             <li>
@@ -119,17 +116,17 @@
               <input type="checkbox" value="Additional Courses">
               <label for="">Additional Courses</label>
             </li>
+          </li>
         </ul>
           <li>
             <label>Enter your comments</label>
             <textarea name="comments" rows="5" id="comments" placeholder="Enter your comment here..."></textarea>
           </li>
-          <li>
+          <div class="button-container">
             <button id="submit" type="submit">Submit</button>
-          </li>
+          </div>
         </ul>
       </form>
     </div>
   </div>
 </body>
-</html>
