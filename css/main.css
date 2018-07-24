@@ -11,9 +11,10 @@ body {
   }
 
 .container {
-  width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
 }
 
 .wrapper{
@@ -22,7 +23,8 @@ body {
 }
 
 .wrapper > * {
-  padding: 0.8em;
+  padding: 0.4em;
+  margin-bottom: 0;
 }
 
 .title-header {
@@ -32,65 +34,44 @@ body {
 #title,
 #description {
   text-align: center;
+  padding-bottom: 0;
 }
 
-.form-outer,
-.form-inner {
-  list-style: none;
+#survey-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  margin-left: 1em;
+}
+
+.label {
+  flex: 0 0 100%;
+  margin: 0 1em 1em 0;
+}
+
+.input {
+  flex: 0 0 90%;
+  margin: 0;
+}
+
+.input ul {
   padding: 0;
 }
 
-.form-outer {
-  max-width: 800px;
-  margin: 0 auto;
+.input li {
+  list-style: none;
 }
 
-.form-outer li,
-.form-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.form-inner {
-  padding: 0 10px;
-}
-
-.form-outer li label,
-.form-inner li p {
-  padding: 5px;
-}
-
-.form-outer > li > label,
-.form-inner li p {
-  flex: 1 0 120px;
-  max-width: 320px;
-}
-
-.form-outer > li > label + *,
-.form-inner {
-  flex: 1 0 220px;
-}
-
-.form-outer li input,
-.form-outer li select,
-.form-outer li textarea{
-  padding: 1em;
-}
-
-.form-outer li textarea{
-  margin: 10px;
-}
-
-.form-inner li {
+textarea {
   width: 100%;
 }
 
 .button-container {
+  width: 100%;
   text-align: center;
 }
 
-.form-outer button {
+button {
   margin-top: 10px;
   padding: 8px 16px;
   border: none;
@@ -100,4 +81,27 @@ body {
   letter-spacing: 0.1em;
   border-radius: 2px;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+   .label {
+     flex: 0 0 7.5em;
+     text-align: right;
+     margin-left: 1em;
+   }
+   .input {
+     flex: 0 0 50%;
+     text-align: left;
+   }
+}
+
+@media screen and (min-width: 785px) {
+   .label {
+     flex: 0 0 40%;
+     text-align: right;
+   }
+   .input {
+     flex: 0 0 50%;
+     text-align: left;
+   }
 }
